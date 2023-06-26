@@ -576,6 +576,38 @@ hr{
         display: none;
     }
 
+    /* ==== Historia ==== */
+
+    .primeros-mundiales{
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: -80px;
+        
+    }
+
+    .primeros-mundiales img{
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .tabla{
+        display: flex;
+        margin-left: -60px;
+    }
+
+    .imagen-uno{
+        display: none;
+    }
+
+    .imagen-dos{
+        display: none;
+    }
+
+    .imagen-tres{
+        display: none;
+    }
 }
 
     footer{
