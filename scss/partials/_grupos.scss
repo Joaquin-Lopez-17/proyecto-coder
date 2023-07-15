@@ -1,0 +1,72 @@
+/* ==== MOBILE FIRST ==== */
+
+.nav-grupos{
+    display: flex;
+
+    .button-grupo{
+        background-color: #222;
+        color: white;
+        font-size: x-large;
+        align-items: center;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+    .caja-paises{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .pais{
+            width: 360px;
+            padding: 10px 0px 10px 0px;
+
+            div{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                
+                img{
+                    width: 190px;
+                    height: 135px;
+                }
+
+                h2{
+                    justify-self: center;
+                    font-size: large;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+/* ==== TABLET ==== */
+
+@media(min-width: 768px){
+
+    .nav-grupos{
+        display: flex;
+
+        .button-grupo{
+            background-color: #222;
+            color: white;
+            font-size: x-large;
+            align-items: center;
+            height: 70px;
+            width: 128px;
+        }
+    }
+}
+
+/* ==== DESKTOP ====*/
+
+@media(min-width: 1024px){
+    main{
+        padding-top: 100px;
+    }
+    .nav-grupos{
+        display: none;
+    }
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../images/favicon.jpg">
     <title>Sedes</title>
@@ -13,34 +14,34 @@
 <body>
 
     <header>
-
-        <div>
-
-            <h1><a href="../index.html">MUNDIAL SUB 20 - ARGENTINA 2023</a></h1>
-
-        </div>
-
-        <div class="nav-menu">
-
-            <input type="checkbox" id="check"> 
-            
-            <label for="check" class="checkbtn">
-
-                <i class="menu-icon"><img src="../images/menu.jpg" alt=""></i>
-
-            </label>
-
-            <ul>
-
-                <li><a href="./grupos.html">GRUPOS</a></li>
-                <li><a href="./noticias.html">NOTICIAS</a></li>
-                <li><a href="./sedes.html">SEDES</a></li>
-                <li><a href="./historia.html">HISTORIA</a></li>
-
-            </ul>
-
-        </div>
-
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="../index.html"><h1 class="text-white">MUNDIAL SUB 20 - ARGENTINA 2023</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item visible-lg-">
+                            <a class="nav-link text-white" href="./grupos.html">GRUPOS</a>
+                        </li>
+                        <li class="nav-item hidden-lg-">
+                            <a class="nav-link text-white" href="./grupo-a.html">GRUPOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./noticias.html">NOTICIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./sedes.html">SEDES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./historia.html">HISTORIA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main style="background-image: url(../images/fondo.jpg);">
@@ -48,8 +49,6 @@
         <div class="sedes">
 
             <h2>Estadio Ciudad de La Plata</h2>
-
-            <hr>
 
             <div class="ubicacion-estadios">
 
@@ -64,8 +63,6 @@
 
             <h2>Estadio Malvinas Argentinas</h2>
 
-            <hr>
-
             <div class="ubicacion-estadios">
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53608.41182032931!2d-68.89637157572038!3d-32.884265434339895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza%2C%20Argentina!5e0!3m2!1ses!2suy!4v1685214836955!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -79,8 +76,6 @@
             <hr>
 
             <h2>Estadio Único Madre de Ciudades</h2>
-
-            <hr>
 
             <div class="ubicacion-estadios">
 
@@ -97,8 +92,6 @@
 
             <h2>San Juan del Bicentenario</h2>
 
-            <hr>
-
             <div class="ubicacion-estadios">
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45753.27713668599!2d-68.55802278935343!3d-31.53424738601752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96814029a33cd497%3A0xbff3a3a0233cfcb3!2sSan%20Juan%2C%20Argentina!5e0!3m2!1ses!2suy!4v1685215072419!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -113,6 +106,8 @@
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a077643384.js" crossorigin="anonymous"></script>
 </body>
 
 <footer class="footer">
