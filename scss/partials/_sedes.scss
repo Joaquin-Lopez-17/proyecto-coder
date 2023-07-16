@@ -41,7 +41,12 @@
 /* ==== TABLET ==== */
 
 @media(min-width: 768px){
-    
+    .sedes{
+        h3{
+            text-align: start;
+            padding-left: 10px;
+        }
+    }
 }
 
 /* ==== DESKTOP ====*/

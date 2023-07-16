@@ -94,6 +94,10 @@
         img {
             height: 150px;
         }
+
+        hr{
+            display: none;
+        }
     }
 }
 
@@ -159,14 +163,12 @@
 .tres-noticias-index{
     img{
         height: 250px;
+        padding: 5px 0px 20px 0px;
     }
-    
     .titulo-tres-noticias{
-        padding-bottom: 22px;
-    }
-
-    hr{
-        display: none;
+        hr{
+            display: none;
+        }
     }
 }
 
@@ -181,7 +183,7 @@
     img{
         max-width: 500px;
         max-height: 500px;
-        padding: 10px 0px 10px 10px;
+        padding: 10px 10px 10px 10px;
     }
 }
 
@@ -190,6 +192,4 @@
         padding: 10px;
     }
 }
-
-
 }

@@ -108,6 +108,12 @@ body {
   .caja-grupos h2 {
     font-family: Copperplate, Papyrus, fantasy;
   }
+  .pais {
+    margin: 10px;
+  }
+  .pais hr {
+    display: none;
+  }
 }
 /* ==== DESKTOP ====*/
 @media (min-width: 1024px) {
@@ -117,8 +123,35 @@ body {
   .nav-grupos {
     display: none;
   }
+  .caja-grupos {
+    display: flex;
+    padding: 30px 0px 0px 0px;
+    flex-direction: column;
+  }
+  .caja-grupos hr {
+    margin: 0px 20px 20px 0px;
+  }
+  .caja-grupos p {
+    margin-bottom: 20px;
+  }
   .caja-grupos h2 {
-    font-family: Copperplate, Papyrus, fantasy;
+    font-size: xx-large;
+  }
+  .caja-grupos .caja-grupo {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 150px;
+  }
+  .caja-grupos img {
+    margin: 10px 10px;
+  }
+  .caja-grupos p {
+    text-align: center;
+    font-size: large;
+  }
+  .caja-grupos h3 {
+    font-size: x-large;
   }
 }
 /* ==== MOBILE ==== */
@@ -306,9 +339,20 @@ header nav ul li a {
 
 /* ==== TABLET ==== */
 @media (min-width: 768px) {
+  .primeros-mundiales .foto-vieja {
+    display: inline;
+    width: 300px;
+    margin: 130px 0px 0px 50px;
+    position: absolute;
+  }
+  .primeros-mundiales .foto-vieja p {
+    display: none;
+  }
   .palmares .tabla {
+    display: block;
+    align-self: center;
     text-align: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 15px 10px;
   }
   .palmares .tabla tr {
     background-color: white;
@@ -318,6 +362,21 @@ header nav ul li a {
   }
   .palmares .tabla tr td {
     border: black solid 1px;
+  }
+  .imagen-uno p {
+    text-align: center;
+    padding: 30px 100px 0px 100px;
+    margin-bottom: 0px;
+  }
+  .imagen-dos p {
+    text-align: center;
+    padding: 30px 100px 0px 100px;
+    margin-bottom: 0px;
+  }
+  .imagen-tres p {
+    text-align: center;
+    padding: 30px 100px 0px 100px;
+    margin-bottom: 0px;
   }
 }
 /* ==== DESKTOP ====*/
@@ -401,6 +460,9 @@ header nav ul li a {
   .tres-noticias-index img {
     height: 150px;
   }
+  .tres-noticias-index hr {
+    display: none;
+  }
 }
 .clasificacion h2,
 .formato h2,
@@ -449,11 +511,9 @@ header nav ul li a {
   }
   .tres-noticias-index img {
     height: 250px;
+    padding: 5px 0px 20px 0px;
   }
-  .tres-noticias-index .titulo-tres-noticias {
-    padding-bottom: 22px;
-  }
-  .tres-noticias-index hr {
+  .tres-noticias-index .titulo-tres-noticias hr {
     display: none;
   }
   .lista-clasificacion {
@@ -466,7 +526,7 @@ header nav ul li a {
   .lista-clasificacion img {
     max-width: 500px;
     max-height: 500px;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 10px 10px 10px;
   }
   .formato p {
     padding: 10px;
@@ -596,6 +656,12 @@ h3 {
 }
 
 /* ==== TABLET ==== */
+@media (min-width: 768px) {
+  .sedes h3 {
+    text-align: start;
+    padding-left: 10px;
+  }
+}
 /* ==== DESKTOP ====*/
 
 /*# sourceMappingURL=styles.css.map */

@@ -115,26 +115,62 @@
 /* ==== TABLET ==== */
 
 @media(min-width: 768px){
-    .palmares{
-    .tabla{
-        text-align: center;
-        padding: 0px 10px 0px 10px;
+    .primeros-mundiales{
+        .foto-vieja{
+            display: inline;
+            width: 300px;
+            margin: 130px 0px 0px 50px;
+            position:absolute;
 
-        tr{
-            background-color: white;
-
-            th{
-                border: black solid 1px;
-            }
-
-            td{
-                border: black solid 1px;
+            p{
+                display: none;
             }
         }
     }
-}
-}
+    .palmares{
+        .tabla{
+            display: block;
+            align-self: center;
+            text-align: center;
+            padding: 0px 10px 15px 10px;
 
+            tr{
+                background-color: white;
+
+                th{
+                    border: black solid 1px;
+                }
+
+                td{
+                    border: black solid 1px;
+                }
+            }
+        }
+    }
+    .imagen-uno{
+        p{
+            text-align: center;
+            padding: 30px 100px 0px 100px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .imagen-dos{
+        p{
+            text-align: center;
+            padding: 30px 100px 0px 100px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .imagen-tres{
+        p{
+            text-align: center;
+            padding: 30px 100px 0px 100px;
+            margin-bottom: 0px;
+        }
+    }
+}
 /* ==== DESKTOP ====*/
 
 @media(min-width: 1024px){
