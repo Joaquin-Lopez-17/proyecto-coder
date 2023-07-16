@@ -1,9 +1,138 @@
 /* ==== MOBILE ==== */
+.historia{
+    h2{
+        padding-top: 10px;
+    }
+}
+
+.primeros-mundiales{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .foto-vieja{
+        display: none;
+    }
+
+    .texto-copa{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(65, 105, 225, 0.726);
+        border-radius: 10px;
+
+        p{
+            text-align: start;
+            margin: 5px;
+        }
+
+    .copa{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        img{
+            width: 300px;
+            align-self: end;
+            margin: 5px;
+            border-radius: 50%;
+        }
+
+        p{
+            text-align: end;
+            text-decoration: underline;
+        }
+    }
+    }
+}
+.palmares{
+    display: flex;
+    flex-direction: column;
+
+    img{
+        width: 200px;
+    }
+    h3{
+        display: none;
+    }
+
+    .imagen-uno{
+        display: flex;
+        margin: 10px 5px 20px 5px;
+        background-color: rgb(65, 105, 225, 0.726);
+        border-radius: 5px;
+
+        img{
+            align-self: center;
+            margin: 5px 0px 5px 5px;
+            height: 130px;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 0px;
+        }
+    }
+
+    .imagen-dos{
+        display: flex;
+        margin: 0px 5px 20px 5px;
+        background-color: rgb(65, 105, 225, 0.726);
+        border-radius: 5px;
+
+        img{
+            align-self: center;
+            margin: 5px 5px 5px 0px;
+            height: 130px;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 0px;
+        }
+    }
+
+    .imagen-tres{
+        display: flex;
+        margin: 0px 5px 20px 5px;
+        background-color: rgb(65, 105, 225, 0.726);
+        border-radius: 5px;
+
+        img{
+            align-self: center;
+            margin: 5px 0px 5px 5px;
+            height: 130px;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 0px;
+        }
+    }
+
+    .tabla{
+        display: none;
+    }
+}
 
 /* ==== TABLET ==== */
 
 @media(min-width: 768px){
-    
+    .palmares{
+    .tabla{
+        text-align: center;
+        padding: 0px 10px 0px 10px;
+
+        tr{
+            background-color: white;
+
+            th{
+                border: black solid 1px;
+            }
+
+            td{
+                border: black solid 1px;
+            }
+        }
+    }
+}
 }
 
 /* ==== DESKTOP ====*/

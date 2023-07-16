@@ -20,6 +20,10 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
 .img-background {
   background-image: url("../images/fondo.jpg");
   resize: both;
@@ -79,10 +83,13 @@ body {
   width: 190px;
   height: 135px;
 }
-.caja-paises .pais div h2 {
+.caja-paises .pais div h3 {
   justify-self: center;
   font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
   width: 100%;
+  text-decoration: none;
 }
 
 /* ==== TABLET ==== */
@@ -98,6 +105,9 @@ body {
     height: 70px;
     width: 128px;
   }
+  .caja-grupos h2 {
+    font-family: Copperplate, Papyrus, fantasy;
+  }
 }
 /* ==== DESKTOP ====*/
 @media (min-width: 1024px) {
@@ -106,6 +116,9 @@ body {
   }
   .nav-grupos {
     display: none;
+  }
+  .caja-grupos h2 {
+    font-family: Copperplate, Papyrus, fantasy;
   }
 }
 /* ==== MOBILE ==== */
@@ -193,7 +206,120 @@ header nav ul li a {
   }
 }
 /* ==== MOBILE ==== */
+.historia h2 {
+  padding-top: 10px;
+}
+
+.primeros-mundiales {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.primeros-mundiales .foto-vieja {
+  display: none;
+}
+.primeros-mundiales .texto-copa {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(65, 105, 225, 0.726);
+  border-radius: 10px;
+}
+.primeros-mundiales .texto-copa p {
+  text-align: start;
+  margin: 5px;
+}
+.primeros-mundiales .texto-copa .copa {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.primeros-mundiales .texto-copa .copa img {
+  width: 300px;
+  align-self: end;
+  margin: 5px;
+  border-radius: 50%;
+}
+.primeros-mundiales .texto-copa .copa p {
+  text-align: end;
+  text-decoration: underline;
+}
+
+.palmares {
+  display: flex;
+  flex-direction: column;
+}
+.palmares img {
+  width: 200px;
+}
+.palmares h3 {
+  display: none;
+}
+.palmares .imagen-uno {
+  display: flex;
+  margin: 10px 5px 20px 5px;
+  background-color: rgba(65, 105, 225, 0.726);
+  border-radius: 5px;
+}
+.palmares .imagen-uno img {
+  align-self: center;
+  margin: 5px 0px 5px 5px;
+  height: 130px;
+}
+.palmares .imagen-uno p {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.palmares .imagen-dos {
+  display: flex;
+  margin: 0px 5px 20px 5px;
+  background-color: rgba(65, 105, 225, 0.726);
+  border-radius: 5px;
+}
+.palmares .imagen-dos img {
+  align-self: center;
+  margin: 5px 5px 5px 0px;
+  height: 130px;
+}
+.palmares .imagen-dos p {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.palmares .imagen-tres {
+  display: flex;
+  margin: 0px 5px 20px 5px;
+  background-color: rgba(65, 105, 225, 0.726);
+  border-radius: 5px;
+}
+.palmares .imagen-tres img {
+  align-self: center;
+  margin: 5px 0px 5px 5px;
+  height: 130px;
+}
+.palmares .imagen-tres p {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.palmares .tabla {
+  display: none;
+}
+
 /* ==== TABLET ==== */
+@media (min-width: 768px) {
+  .palmares .tabla {
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+  }
+  .palmares .tabla tr {
+    background-color: white;
+  }
+  .palmares .tabla tr th {
+    border: black solid 1px;
+  }
+  .palmares .tabla tr td {
+    border: black solid 1px;
+  }
+}
 /* ==== DESKTOP ====*/
 /* ==== MOBILE ==== */
 .logo-mundial {
@@ -436,6 +562,16 @@ h3 {
 /* ==== MOBILE ==== */
 .sedes h2 {
   padding-top: 10px;
+}
+.sedes h3 {
+  padding: 0px 0px 5px 0px;
+}
+.sedes hr {
+  padding-bottom: 0px;
+}
+.sedes p {
+  background-color: rgba(65, 105, 225, 0.726);
+  border-radius: 10px;
 }
 
 .ubicacion-estadios {
