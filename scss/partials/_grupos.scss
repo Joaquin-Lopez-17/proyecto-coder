@@ -79,6 +79,7 @@
 
     h2 {
         font-size: xx-large;
+        text-align: center;
     }
 
     .caja-grupo {
@@ -100,14 +101,16 @@
         cursor:pointer;
     }
 
-
     p {
         text-align: center;
         font-size: large;
+        font-family: DejaVu Sans Mono, monospace;
     }
 
     h3 {
         font-size: x-large;
+        font-family: DejaVu Sans Mono, monospace;
+        text-align: center;
     }
 }
 
