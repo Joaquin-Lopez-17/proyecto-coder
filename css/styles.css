@@ -67,6 +67,9 @@ body {
   height: 70px;
   width: 70px;
 }
+.nav-grupos .button-grupo:hover {
+  text-decoration: underline;
+}
 
 .caja-paises {
   display: flex;
@@ -85,14 +88,26 @@ body {
 .caja-paises .pais div img {
   width: 190px;
   height: 135px;
+  border: black 1px solid;
+  transform-style: preserve-3d;
+  transform: perspective(500px) rotateY(0);
+  transition: 1s;
+}
+.caja-paises .pais div img:hover {
+  transform: perspective(500px) rotateY(360deg);
+  cursor: pointer;
 }
 .caja-paises .pais div h3 {
+  color: black;
   justify-self: center;
   font-size: large;
   font-family: Arial, Helvetica, sans-serif;
   font-style: oblique;
   width: 100%;
-  text-decoration: none;
+  text-decoration: underline;
+}
+.caja-paises .pais div a {
+  color: black;
 }
 
 .caja-grupos {
@@ -117,6 +132,14 @@ body {
 .caja-grupos img {
   width: 20%;
   margin: 10px 10px;
+  border: black solid 1px;
+  transform-style: preserve-3d;
+  transform: perspective(500px) rotateY(0deg);
+  transition: 1s;
+}
+.caja-grupos img:hover {
+  transform: perspective(500px) rotateY(360deg);
+  cursor: pointer;
 }
 .caja-grupos p {
   text-align: center;
@@ -197,6 +220,10 @@ header {
 header h1 {
   font-size: 1rem;
 }
+header h1:hover {
+  background-color: rgba(0, 0, 0, 0.374);
+  border-radius: 10px;
+}
 header nav .navbar-toggler {
   border: none;
 }
@@ -225,6 +252,10 @@ header nav ul li a {
   border: black 1px solid;
   border-radius: 10px;
 }
+header nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.374);
+  border-radius: 10px;
+}
 
 /* ==== TABLET ==== */
 /* ==== DESKTOP ==== */
@@ -247,7 +278,7 @@ header nav ul li a {
   header h1 {
     font-size: xx-large;
     color: black;
-    padding-top: 8px;
+    margin-top: 8px;
   }
   header nav {
     width: 100%;
@@ -269,6 +300,10 @@ header nav ul li a {
   }
   header nav ul li {
     gap: 10px;
+  }
+  header nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.374);
+    border-radius: 10px;
   }
   header .nav-grupos {
     display: none;
@@ -446,6 +481,8 @@ header nav ul li a {
 }
 .clasificacion p {
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.608);
+  border-radius: 10px;
 }
 
 .lista-clasificacion {
@@ -499,6 +536,9 @@ header nav ul li a {
   }
   .tres-noticias-index hr {
     display: none;
+  }
+  .tres-noticias-index p {
+    margin-top: 10px;
   }
 }
 .clasificacion h2,
@@ -679,7 +719,7 @@ h3 {
   height: 100%;
   width: 100%;
 }
-.ubicacion-estadios img {
+.ubicacion-estadios a {
   position: relative;
   grid-column: 2/3;
   grid-row: 2/3;
@@ -688,12 +728,18 @@ h3 {
   align-self: center;
   justify-self: center;
 }
+.ubicacion-estadios .img-estadios {
+  border: black solid 1px;
+}
+.ubicacion-estadios .img-estadios img {
+  width: 100%;
+}
 
 /* ==== TABLET ==== */
 @media (min-width: 768px) {
   .sedes h3 {
     text-align: start;
-    padding-left: 10px;
+    margin-left: 10px;
   }
 }
 /* ==== DESKTOP ====*/
@@ -703,18 +749,29 @@ h3 {
     flex-direction: column;
     margin: 0px 20px 0px 20px;
   }
+  .sedes h3 {
+    text-decoration: underline;
+    width: 19%;
+    text-align: center;
+  }
+  .sedes h3:hover {
+    background-color: rgba(0, 0, 0, 0.148);
+    border-radius: 15px;
+  }
   .sedes .ubicacion-estadios {
     display: flex;
     flex-direction: row;
     gap: 40px;
     height: 400px;
+    margin-bottom: 10px;
   }
   .sedes .ubicacion-estadios iframe {
     max-width: 40%;
   }
-  .sedes .ubicacion-estadios img {
-    max-width: 58%;
-    width: 100%;
+  .sedes .ubicacion-estadios .img-estadios {
+    align-self: center;
+    justify-self: end;
+    width: 58%;
     height: 100%;
   }
 }

@@ -7,9 +7,11 @@ header {
 
     h1 {
         font-size: 1rem;
-
     }
-
+    h1:hover{
+        background-color: rgba(0, 0, 0, 0.374);
+        border-radius: 10px;
+    }
     nav {
 
         .navbar-toggler {
@@ -44,6 +46,10 @@ header {
                     border: black 1px solid;
                     border-radius: 10px;
                 }
+                a:hover{
+                    background-color: rgba(0, 0, 0, 0.374);
+                    border-radius: 10px;
+                }
             }
         }
     }
@@ -75,10 +81,12 @@ header {
         font-size: x-large;
         z-index: 1;
 
-        h1 {
+        h1{
             font-size: xx-large;
             color: black;
-            padding-top: 8px;
+            margin-top: 8px;
+            
+            
         }
 
         nav {
@@ -104,6 +112,11 @@ header {
 
                 li {
                     gap: 10px;
+
+                    a:hover{
+                        background-color: rgba(0, 0, 0, 0.374);
+                        border-radius: 10px;
+                    }
                 }
             }
         }

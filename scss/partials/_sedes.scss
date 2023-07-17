@@ -27,7 +27,7 @@
             width: 100%;
             
         }
-    img{
+    a{
         position: relative;
         grid-column: 2/3;
         grid-row: 2/3;
@@ -35,6 +35,13 @@
         height: 106px;
         align-self: center;
         justify-self: center;
+    }
+    .img-estadios{
+        border: black solid 1px;
+
+        img{
+            width: 100%;
+        }
     }
 }
 
@@ -44,7 +51,7 @@
     .sedes{
         h3{
             text-align: start;
-            padding-left: 10px;
+            margin-left: 10px;
         }
     }
 }
@@ -57,19 +64,33 @@
         flex-direction: column;
         margin: 0px 20px 0px 20px;
 
+        h3{
+            text-decoration: underline;
+            width: 19%;
+            text-align:center;
+        }
+        h3:hover{
+            background-color: rgba(0, 0, 0, 0.148);
+            border-radius: 15px;
+            
+        }
+
         .ubicacion-estadios{
             display: flex;
             flex-direction: row;
+            
             gap: 40px;
             height: 400px;
+            margin-bottom: 10px;
             
             
             iframe{
                 max-width: 40%;
             }
-            img{
-                max-width: 58%;
-                width: 100%;
+            .img-estadios{
+                align-self: center;
+                justify-self: end;
+                width: 58%;
                 height: 100%;
             }
         }
