@@ -11,6 +11,7 @@ header {
     }
 
     nav {
+
         .navbar-toggler {
             border: none;
 
@@ -47,7 +48,6 @@ header {
         }
     }
 }
-
 /* ==== TABLET ==== */
 
 @media(min-width: 768px){
@@ -57,13 +57,14 @@ header {
 
 /* ==== DESKTOP ==== */
 
-@media(min-width: 1024px) {
+@media(min-width: 992px) {
 
     /* Estilos del encabezado */
 
     header {
         background-color: royalblue;
         padding: 1rem;
+        top: 0;
         left: 0;
         display: flex;
         position: fixed;
@@ -72,6 +73,7 @@ header {
         align-items: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: x-large;
+        z-index: 1;
 
         h1 {
             font-size: xx-large;

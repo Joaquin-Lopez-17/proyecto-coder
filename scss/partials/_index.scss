@@ -1,7 +1,9 @@
 /* ==== MOBILE ==== */
 
 .logo-mundial{
-    padding: 20px 0px 10px 0px;
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+    
 }
 
 .noticias-index {
@@ -134,7 +136,7 @@
 
 /* ==== DESKTOP ==== */
 
-@media(min-width: 1024px){
+@media(min-width: 992px){
 
 .main {
     padding: 20px;
@@ -143,6 +145,7 @@
 
 .logo-mundial {
     display: flex;
+    align-items: center;
     justify-content: center;
 
     img {

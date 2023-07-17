@@ -55,6 +55,9 @@ body {
 /* ==== MOBILE FIRST ==== */
 .nav-grupos {
   display: flex;
+  width: 100%;
+  background-color: #222;
+  justify-content: space-around;
 }
 .nav-grupos .button-grupo {
   background-color: #222;
@@ -92,6 +95,37 @@ body {
   text-decoration: none;
 }
 
+.caja-grupos {
+  display: flex;
+  padding: 30px 0px 0px 0px;
+  flex-direction: column;
+}
+.caja-grupos hr {
+  margin: 0px 20px 20px 0px;
+}
+.caja-grupos p {
+  margin-bottom: 20px;
+}
+.caja-grupos h2 {
+  font-size: xx-large;
+}
+.caja-grupos .caja-grupo {
+  display: flex;
+  justify-content: space-evenly;
+  height: 150px;
+}
+.caja-grupos img {
+  width: 20%;
+  margin: 10px 10px;
+}
+.caja-grupos p {
+  text-align: center;
+  font-size: large;
+}
+.caja-grupos h3 {
+  font-size: x-large;
+}
+
 /* ==== TABLET ==== */
 @media (min-width: 768px) {
   .nav-grupos {
@@ -116,7 +150,7 @@ body {
   }
 }
 /* ==== DESKTOP ====*/
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   main {
     padding-top: 100px;
   }
@@ -139,12 +173,12 @@ body {
   }
   .caja-grupos .caja-grupo {
     display: flex;
-    justify-content: space-between;
-    width: 200px;
+    justify-content: space-evenly;
     height: 150px;
   }
   .caja-grupos img {
-    margin: 10px 10px;
+    width: 200px;
+    margin: 10px 0px;
   }
   .caja-grupos p {
     text-align: center;
@@ -194,11 +228,12 @@ header nav ul li a {
 
 /* ==== TABLET ==== */
 /* ==== DESKTOP ==== */
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   /* Estilos del encabezado */
   header {
     background-color: royalblue;
     padding: 1rem;
+    top: 0;
     left: 0;
     display: flex;
     position: fixed;
@@ -207,6 +242,7 @@ header nav ul li a {
     align-items: center;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-size: x-large;
+    z-index: 1;
   }
   header h1 {
     font-size: xx-large;
@@ -382,7 +418,8 @@ header nav ul li a {
 /* ==== DESKTOP ====*/
 /* ==== MOBILE ==== */
 .logo-mundial {
-  padding: 20px 0px 10px 0px;
+  text-align: center;
+  margin: 20px 0px 10px 0px;
 }
 
 .noticias-index h2 {
@@ -490,13 +527,14 @@ header nav ul li a {
 }
 
 /* ==== DESKTOP ==== */
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .main {
     padding: 20px;
     padding-top: 120px;
   }
   .logo-mundial {
     display: flex;
+    align-items: center;
     justify-content: center;
   }
   .logo-mundial img {
@@ -533,15 +571,13 @@ header nav ul li a {
   }
 }
 /* ==== MOBILE ==== */
-.noticias {
+.capitannigeria {
+  background-color: rgba(65, 105, 225, 0.726);
+  border-radius: 10px;
   padding: 15px 0px 15px 0px;
   text-align: center;
 }
-.noticias .capitannigeria {
-  background-color: rgba(65, 105, 225, 0.726);
-  border-radius: 10px;
-}
-.noticias .capitannigeria img {
+.capitannigeria img {
   padding: 10px 5px 0px 5px;
   border-radius: 10%;
 }
@@ -564,48 +600,48 @@ h3 {
 
 /* ==== TABLET ==== */
 @media (min-width: 768px) {
-  .article-seis img {
+  .article img {
     width: 100%;
   }
 }
 /* ==== DESKTOP ==== */
 @media (min-width: 1024px) {
-  .noticias {
-    padding-top: 120px;
+  .titulo-capitan-nigeria {
+    font-size: xx-large;
   }
-  .noticias .capitannigeria {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 400px 400px;
+  .capitannigeria {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 50px;
+    padding-top: 20px;
   }
-  .noticias .capitannigeria img {
-    grid-column: 1/3;
-    grid-row: 1/3;
-    margin-left: 55px;
-    width: 1200px;
+  .capitannigeria img {
+    position: relative;
     border-radius: 5%;
   }
-  .noticias .capitannigeria p {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-align: center;
-    width: 500px;
-    padding: 200px 0px 0px 100px;
+  .capitannigeria .texto-imagen {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    bottom: 50px;
+    left: 600px;
     color: white;
-    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
-  .noticias .titulo-capitan-nigeria {
-    font-size: xx-large;
+  .container-relative {
+    position: relative;
   }
   .noticias-destacadas {
     display: grid;
-    grid-template-columns: 440px 440px 440px;
+    grid-template-columns: 320px 320px 320px;
     grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
   }
   .noticias-destacadas img {
     width: 440px;
-    height: 300px;
+    height: 200px;
     padding: 10px 20px 10px 20px;
     overflow: hidden;
     border-radius: 9%;
@@ -617,8 +653,6 @@ h3 {
     font-size: x-large;
   }
 }
-/* ==== TABLET ==== */
-/* ==== DESKTOP ====*/
 /* ==== MOBILE ==== */
 .sedes h2 {
   padding-top: 10px;
@@ -663,5 +697,26 @@ h3 {
   }
 }
 /* ==== DESKTOP ====*/
+@media (min-width: 992px) {
+  .sedes {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 0px 20px;
+  }
+  .sedes .ubicacion-estadios {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    height: 400px;
+  }
+  .sedes .ubicacion-estadios iframe {
+    max-width: 40%;
+  }
+  .sedes .ubicacion-estadios img {
+    max-width: 58%;
+    width: 100%;
+    height: 100%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
