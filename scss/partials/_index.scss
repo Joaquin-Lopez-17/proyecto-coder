@@ -1,15 +1,15 @@
 /* ==== MOBILE ==== */
 
-.logo-mundial{
-    
+.logo-mundial {
+
     text-align: center;
     margin: 20px 5px 10px 5px;
-    
-    img{
+
+    img {
         border: black solid 2px;
-        
+
     }
-    
+
 }
 
 .noticias-index {
@@ -28,68 +28,73 @@
     border-radius: 10px;
 
 
-    h3{
+    h3 {
         font-size: x-large;
         font-family: Times, Times New Roman, serif;
     }
+
     img {
         width: 100%;
         border: black 1px solid;
     }
-    p{
+
+    p {
         font-size: large;
         font-family: Times, Times New Roman, serif;
     }
 }
 
-.clasificacion{
-    h2{
+.clasificacion {
+    h2 {
         padding: 5px 0px 5px 0px;
         text-align: center;
         text-decoration: underline;
     }
-    p{
+
+    p {
         text-align: center;
         background-color: rgba(255, 255, 255, 0.608);
         border-radius: 10px;
     }
 }
 
-.lista-clasificacion{
+.lista-clasificacion {
     background-color: rgba(65, 105, 225, 0.726);
     border-radius: 10px;
 
-    li{
+    li {
         padding: 5px 3px 0px 5px;
     }
 }
 
-.formato{
-    h2{
+.formato {
+    h2 {
         text-align: center;
         padding: 5px 0px 5px 0px;
         text-decoration: underline;
     }
-    p{
+
+    p {
         background-color: rgba(65, 105, 225, 0.726);
         border-radius: 10px;
         padding: 10px;
     }
 }
 
-.eleccion-sede{
-    h2{
+.eleccion-sede {
+    h2 {
         text-align: center;
         padding: 5px 0px 5px 0px;
         text-decoration: underline;
     }
-    
-    p{
+
+    p {
         background-color: rgba(65, 105, 225, 0.726);
         border-radius: 10px;
         padding: 10px;
     }
-    .mapa-argentina{
+
+    .mapa-argentina {
         width: 100%;
     }
 }
@@ -114,10 +119,11 @@
             height: 150px;
         }
 
-        hr{
+        hr {
             display: none;
         }
-        p{
+
+        p {
             margin-top: 10px;
         }
     }
@@ -140,7 +146,7 @@
         }
     }
 
-    img{
+    img {
         border: white 1px solid;
         max-width: 100%;
         height: auto;
@@ -157,64 +163,64 @@
 
 /* ==== DESKTOP ==== */
 
-@media(min-width: 992px){
+@media(min-width: 992px) {
 
-.main {
-    padding: 20px;
-    padding-top: 120px;
-}
-
-.logo-mundial {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-        max-width: 100%;
-        height: auto;
+    .main {
+        margin: 40px 40px 0px 40px;
     }
 
-}
+    .logo-mundial {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-.noticias-index {
-    margin-bottom: 20px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
 
-    h2 {
-        margin-top: 0;
     }
-}
 
-.tres-noticias-index{
-    img{
-        height: 250px;
-        
-    }
-    .titulo-tres-noticias{
-        hr{
-            display: none;
+    .noticias-index {
+        margin-bottom: 20px;
+
+        h2 {
+            margin-top: 0;
         }
     }
-}
 
-.lista-clasificacion{
-    display: flex;
-    padding-left: 20px;
+    .tres-noticias-index {
+        img {
+            height: 250px;
 
-    li{
-        padding-top: 20px;
+        }
+
+        .titulo-tres-noticias {
+            hr {
+                display: none;
+            }
+        }
     }
 
-    img{
-        border: white 1px solid;
-        max-width: 500px;
-        max-height: 500px;
-        margin: 10px 10px;
-    }
-}
+    .lista-clasificacion {
+        display: flex;
+        padding-left: 20px;
 
-.formato{
-    p{
-        padding: 10px;
+        li {
+            padding-top: 20px;
+        }
+
+        img {
+            border: white 1px solid;
+            max-width: 500px;
+            max-height: 500px;
+            margin: 10px 10px;
+        }
     }
-}
+
+    .formato {
+        p {
+            padding: 10px;
+        }
+    }
 }

@@ -14,9 +14,10 @@
         height: 70px;
         width: 70px;
     }
-    .button-grupo:hover{
+
+    .button-grupo:hover {
         text-decoration: underline;
-        
+
     }
 }
 
@@ -24,7 +25,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 
     .pais {
         width: 360px;
@@ -43,7 +43,8 @@
                 transform: perspective(500px) rotateY(0);
                 transition: 1s;
             }
-            img:hover{
+
+            img:hover {
                 transform: perspective(500px) rotateY(360deg);
                 cursor: pointer;
             }
@@ -57,11 +58,17 @@
                 width: 100%;
                 text-decoration: underline;
             }
-            a{
+
+            a {
                 color: black;
             }
         }
     }
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
 }
 
 .caja-grupos {
@@ -80,6 +87,7 @@
     h2 {
         font-size: xx-large;
         text-align: center;
+        text-decoration: underline;
     }
 
     .caja-grupo {
@@ -88,7 +96,7 @@
         height: 150px;
     }
 
-    img{
+    img {
         width: 20%;
         margin: 10px 10px;
         border: black solid 1px;
@@ -96,9 +104,10 @@
         transform: perspective(500px) rotateY(0deg);
         transition: 1s;
     }
-    img:hover{
+
+    img:hover {
         transform: perspective(500px) rotateY(360deg);
-        cursor:pointer;
+        cursor: pointer;
     }
 
     p {
@@ -113,7 +122,6 @@
         text-align: center;
     }
 }
-
 
 /* ==== TABLET ==== */
 
@@ -152,6 +160,7 @@
 @media(min-width: 992px) {
     main {
         padding-top: 100px;
+        margin: 0px 40px 0px 40px;
     }
 
     .nav-grupos {

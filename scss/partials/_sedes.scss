@@ -1,34 +1,39 @@
 /* ==== MOBILE ==== */
-.sedes{
-    h2{
+.sedes {
+    h2 {
         padding-top: 10px;
         text-align: center;
     }
-    h3{
+
+    h3 {
         padding: 0px 0px 5px 0px;
-        
+
     }
-    hr{
+
+    hr {
         padding-bottom: 0px;
     }
-    p{
+
+    p {
         background-color: rgba(65, 105, 225, 0.726);
         border-radius: 10px;
     }
 }
-.ubicacion-estadios{
+
+.ubicacion-estadios {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 194px 194px;
-    
-    iframe{
-            grid-column: 1/3;
-            grid-row: 1/3;
-            height: 100%;
-            width: 100%;
-            
-        }
-    a{
+
+    iframe {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    a {
         position: relative;
         grid-column: 2/3;
         grid-row: 2/3;
@@ -37,10 +42,11 @@
         align-self: center;
         justify-self: center;
     }
-    .img-estadios{
+
+    .img-estadios {
         border: black solid 1px;
 
-        img{
+        img {
             width: 100%;
         }
     }
@@ -48,9 +54,9 @@
 
 /* ==== TABLET ==== */
 
-@media(min-width: 768px){
-    .sedes{
-        h3{
+@media(min-width: 768px) {
+    .sedes {
+        h3 {
             text-align: start;
             margin-left: 10px;
         }
@@ -59,42 +65,40 @@
 
 /* ==== DESKTOP ====*/
 
-@media(min-width: 992px){
-    .sedes{
+@media(min-width: 992px) {
+    main {
+        margin: 0px 40px 0px 40px;
+    }
+
+    .sedes {
         display: flex;
         flex-direction: column;
-        margin: 0px 20px 0px 20px;
 
-        h3{
+        h3 {
             text-decoration: underline;
-            width: 19%;
-            text-align:center;
-        }
-        h3:hover{
-            background-color: rgba(0, 0, 0, 0.148);
-            border-radius: 15px;
-            
+            text-align: start;
         }
 
-        .ubicacion-estadios{
+        .ubicacion-estadios {
             display: flex;
             flex-direction: row;
-            
+
             gap: 40px;
             height: 400px;
             margin-bottom: 10px;
-            
-            
-            iframe{
+
+
+            iframe {
                 max-width: 40%;
             }
-            .img-estadios{
+
+            .img-estadios {
                 align-self: center;
                 justify-self: end;
                 width: 58%;
                 height: 100%;
             }
         }
-        
+
     }
 }

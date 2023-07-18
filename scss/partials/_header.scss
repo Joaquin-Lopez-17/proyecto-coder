@@ -8,17 +8,19 @@ header {
     h1 {
         font-size: 1rem;
     }
-    h1:hover{
+
+    h1:hover {
         background-color: rgba(0, 0, 0, 0.374);
         border-radius: 10px;
         transition: all 0.3s;
     }
+
     nav {
 
         .navbar-toggler {
             border: none;
 
-            i{
+            i {
                 color: white;
                 font-size: 35px;
             }
@@ -33,7 +35,7 @@ header {
             padding: 0;
             margin: 0;
 
-            .visible-lg-{
+            .visible-lg- {
                 display: none;
             }
 
@@ -47,7 +49,8 @@ header {
                     border: black 1px solid;
                     border-radius: 10px;
                 }
-                a:hover{
+
+                a:hover {
                     background-color: rgba(0, 0, 0, 0.374);
                     border-radius: 10px;
                     transition: all 0.3s;
@@ -56,11 +59,10 @@ header {
         }
     }
 }
+
 /* ==== TABLET ==== */
 
-@media(min-width: 768px){
-    
-}
+@media(min-width: 768px) {}
 
 
 /* ==== DESKTOP ==== */
@@ -83,12 +85,12 @@ header {
         font-size: x-large;
         z-index: 1;
 
-        h1{
+        h1 {
             font-size: xx-large;
             color: black;
             margin-top: 8px;
-            
-            
+
+
         }
 
         nav {
@@ -104,18 +106,18 @@ header {
                 padding: 0;
                 margin: 0;
 
-                .hidden-lg-{
+                .hidden-lg- {
                     display: none;
                 }
 
-                .visible-lg-{
+                .visible-lg- {
                     display: flex;
                 }
 
                 li {
                     gap: 10px;
 
-                    a:hover{
+                    a:hover {
                         background-color: rgba(0, 0, 0, 0.374);
                         border-radius: 10px;
                     }

@@ -1,38 +1,50 @@
 /* ==== MOBILE ==== */
-.capitannigeria {
+.container-relative {
     background-color: rgba(65, 105, 225, 0.726);
     border-radius: 10px;
-    padding: 15px 0px 15px 0px;
-    text-align: center;
 
-    img {
-        padding: 10px 5px 0px 5px;
-        border-radius: 10%;
+    .capitannigeria-mobile {
+        border-radius: 10px;
+        padding: 15px 15px;
+        text-align: center;
+
+        img {
+
+            border-radius: 10%;
+            border: white 1px solid;
+        }
+
+    }
+
+    .texto-imagen {
+        text-align: center;
+    }
+
+    .capitan-nigeria {
+        display: none;
     }
 }
 
+
 .noticias-destacadas {
     background-color: rgba(65, 105, 225, 0.726);
-    border: black 1px solid;
     border-radius: 10px;
     padding-top: 20px;
-    
+
     h2 {
         text-align: center;
         text-decoration: underline;
     }
+
     h3 {
         text-align: center;
         font-size: large;
     }
-    img{
+
+    img {
         border: black 1px solid;
     }
 }
-
-
-
-
 
 /* ==== TABLET ==== */
 
@@ -47,37 +59,27 @@
 /* ==== DESKTOP ==== */
 
 @media(min-width: 992px) {
-
-    .titulo-capitan-nigeria {
-        font-size: xx-large;
-    }
-
-    .capitannigeria {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 50px;
-        padding-top: 20px;
-
-        img {
-            position: relative;
-            border-radius: 5%;
-        }
-
-        .texto-imagen {
-            position: absolute;
-            top: 0;
-            right: 40px;
-            bottom: 50px;
-            left: 600px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
+    main {
+        margin: 0px 40px 0px 40px;
     }
 
     .container-relative {
-        position: relative;
+
+
+        .capitannigeria-mobile {
+            display: none;
+        }
+
+        .capitan-nigeria {
+            display: flex;
+            border-radius: 10%;
+            padding: 15px 15px;
+            width: 100%;
+        }
+
+        .texto-imagen {
+            display: none;
+        }
     }
 
     .noticias-destacadas {
@@ -91,13 +93,13 @@
             width: 100%;
             height: 200px;
             overflow: hidden;
-            border-radius: 9%;        
+            border-radius: 9%;
         }
 
         hr {
             display: none;
         }
-}
+    }
 
     .titulo-noticias-destacadas {
         font-size: x-large;
