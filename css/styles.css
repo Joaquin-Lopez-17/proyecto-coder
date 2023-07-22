@@ -59,6 +59,7 @@ body {
   background-color: #222;
   justify-content: space-around;
 }
+
 .nav-grupos .button-grupo {
   background-color: #222;
   color: white;
@@ -67,6 +68,7 @@ body {
   height: 70px;
   width: 70px;
 }
+
 .nav-grupos .button-grupo:hover {
   text-decoration: underline;
 }
@@ -76,15 +78,18 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .caja-paises .pais {
   width: 360px;
   padding: 10px 0px 10px 0px;
 }
+
 .caja-paises .pais div {
   display: flex;
   align-items: center;
   width: 100%;
 }
+
 .caja-paises .pais div img {
   width: 190px;
   height: 135px;
@@ -93,10 +98,12 @@ body {
   transform: perspective(500px) rotateY(0);
   transition: 1s;
 }
+
 .caja-paises .pais div img:hover {
   transform: perspective(500px) rotateY(360deg);
   cursor: pointer;
 }
+
 .caja-paises .pais div h3 {
   color: black;
   justify-self: center;
@@ -106,6 +113,7 @@ body {
   width: 100%;
   text-decoration: underline;
 }
+
 .caja-paises .pais div a {
   color: black;
 }
@@ -120,22 +128,27 @@ h2 {
   padding: 30px 0px 0px 0px;
   flex-direction: column;
 }
+
 .caja-grupos hr {
   margin: 0px 20px 20px 0px;
 }
+
 .caja-grupos p {
   margin-bottom: 20px;
 }
+
 .caja-grupos h2 {
   font-size: xx-large;
   text-align: center;
   text-decoration: underline;
 }
+
 .caja-grupos .caja-grupo {
   display: flex;
   justify-content: space-evenly;
   height: 150px;
 }
+
 .caja-grupos img {
   width: 20%;
   margin: 10px 10px;
@@ -144,15 +157,18 @@ h2 {
   transform: perspective(500px) rotateY(0deg);
   transition: 1s;
 }
+
 .caja-grupos img:hover {
   transform: perspective(500px) rotateY(360deg);
   cursor: pointer;
 }
+
 .caja-grupos p {
   text-align: center;
   font-size: large;
   font-family: DejaVu Sans Mono, monospace;
 }
+
 .caja-grupos h3 {
   font-size: x-large;
   font-family: DejaVu Sans Mono, monospace;
@@ -164,6 +180,7 @@ h2 {
   .nav-grupos {
     display: flex;
   }
+
   .nav-grupos .button-grupo {
     background-color: #222;
     color: white;
@@ -172,98 +189,122 @@ h2 {
     height: 70px;
     width: 128px;
   }
+
   .caja-grupos h2 {
     font-family: Copperplate, Papyrus, fantasy;
   }
+
   .pais {
     margin: 10px;
   }
+
   .pais hr {
     display: none;
   }
 }
+
 /* ==== DESKTOP ====*/
 @media (min-width: 992px) {
   main {
     padding-top: 100px;
     margin: 0px 40px 0px 40px;
   }
+
   .nav-grupos {
     display: none;
   }
+
   .caja-grupos {
     display: flex;
     padding: 30px 0px 0px 0px;
     flex-direction: column;
   }
+
   .caja-grupos hr {
     margin: 0px 20px 20px 0px;
   }
+
   .caja-grupos p {
     margin-bottom: 20px;
   }
+
   .caja-grupos h2 {
     font-size: xx-large;
   }
+
   .caja-grupos .caja-grupo {
     display: flex;
     justify-content: space-evenly;
     height: 150px;
   }
+
   .caja-grupos img {
     width: 200px;
     margin: 10px 0px;
   }
+
   .caja-grupos p {
     text-align: center;
     font-size: large;
   }
+
   .caja-grupos h3 {
     font-size: x-large;
   }
 }
+
 /* ==== MOBILE ==== */
 header {
   background-color: royalblue;
   color: #fff;
   padding: 5px;
 }
+
 header h1 {
   font-size: 1rem;
 }
+
 header h1:hover {
   background-color: rgba(0, 0, 0, 0.374);
   border-radius: 10px;
   transition: all 0.3s;
 }
+
 header nav .navbar-toggler {
   border: none;
 }
+
 header nav .navbar-toggler i {
   color: white;
   font-size: 35px;
 }
+
 header nav .navbar-toggler:focus {
   box-shadow: none;
 }
+
 header nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 header nav ul .visible-lg- {
   display: none;
 }
+
 header nav ul li {
   display: flex;
   justify-content: center;
 }
+
 header nav ul li a {
   color: #fff;
   text-decoration: none;
   border: black 1px solid;
   border-radius: 10px;
 }
+
 header nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.374);
   border-radius: 10px;
@@ -273,6 +314,7 @@ header nav ul li a:hover {
 /* ==== TABLET ==== */
 /* ==== DESKTOP ==== */
 @media (min-width: 992px) {
+
   /* Estilos del encabezado */
   header {
     background-color: royalblue;
@@ -288,40 +330,50 @@ header nav ul li a:hover {
     font-size: x-large;
     z-index: 1;
   }
+
   header h1 {
     font-size: xx-large;
     color: black;
     margin-top: 8px;
   }
+
   header nav {
     width: 100%;
   }
+
   header nav .collapse {
     display: flex;
     justify-content: flex-end;
   }
+
   header nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
+
   header nav ul .hidden-lg- {
     display: none;
   }
+
   header nav ul .visible-lg- {
     display: flex;
   }
+
   header nav ul li {
     gap: 10px;
   }
+
   header nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.374);
     border-radius: 10px;
   }
+
   header .nav-grupos {
     display: none;
   }
 }
+
 /* ==== MOBILE ==== */
 .historia h2 {
   padding-top: 10px;
@@ -334,14 +386,17 @@ header nav ul li a:hover {
   width: 100%;
   background-color: rgba(65, 105, 225, 0.726);
 }
+
 .primeros-mundiales .texto-foto-vieja {
   display: none;
 }
+
 .primeros-mundiales .texto-foto-vieja p {
   text-align: center;
   margin: 5px 0px 5px 5px;
   max-width: 45%;
 }
+
 .primeros-mundiales .texto-foto-vieja .foto-vieja {
   display: flex;
   flex-direction: row;
@@ -349,27 +404,32 @@ header nav ul li a:hover {
   max-height: 200px;
   justify-content: end;
 }
+
 .primeros-mundiales .texto-copa {
   display: flex;
   flex-direction: column;
   width: 100%;
   border-radius: 10px;
 }
+
 .primeros-mundiales .texto-copa p {
   text-align: start;
   margin: 5px;
 }
+
 .primeros-mundiales .texto-copa .copa {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .primeros-mundiales .texto-copa .copa img {
   width: 300px;
   align-self: end;
   margin: 5px;
   border-radius: 50%;
 }
+
 .primeros-mundiales .texto-copa .copa p {
   text-align: end;
   text-decoration: underline;
@@ -379,57 +439,69 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: column;
 }
+
 .palmares img {
   width: 200px;
 }
+
 .palmares h3 {
   display: none;
 }
+
 .palmares .imagen-uno {
   display: flex;
   margin: 10px 5px 20px 5px;
   background-color: rgba(65, 105, 225, 0.726);
   border-radius: 5px;
 }
+
 .palmares .imagen-uno img {
   align-self: center;
   margin: 5px 0px 5px 5px;
   height: 130px;
 }
+
 .palmares .imagen-uno p {
   text-align: center;
   margin-bottom: 0px;
 }
+
 .palmares .imagen-dos {
   display: flex;
   margin: 0px 5px 20px 5px;
   background-color: rgba(65, 105, 225, 0.726);
   border-radius: 5px;
 }
+
 .palmares .imagen-dos img {
   align-self: center;
   margin: 5px 5px 5px 0px;
   height: 130px;
 }
+
 .palmares .imagen-dos p {
   text-align: center;
   margin-bottom: 0px;
 }
+
 .palmares .imagen-tres {
   display: flex;
   margin: 0px 5px 20px 5px;
   background-color: rgba(65, 105, 225, 0.726);
   border-radius: 5px;
 }
+
 .palmares .imagen-tres img {
   align-self: center;
   margin: 5px 0px 5px 5px;
   height: 130px;
 }
+
 .palmares .imagen-tres p {
   text-align: center;
   margin-bottom: 0px;
 }
+
 .palmares .tabla {
   display: none;
 }
@@ -440,138 +512,168 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
   }
+
   .primeros-mundiales .texto-foto-vieja {
     display: flex;
     flex-direction: column;
   }
+
   .primeros-mundiales .texto-foto-vieja p {
     max-width: 100%;
     flex-direction: row;
     align-self: start;
   }
+
   .primeros-mundiales .texto-foto-vieja .foto-vieja {
     display: flex;
     width: 500px;
     max-height: 500px;
     align-self: center;
   }
+
   .primeros-mundiales .texto-copa {
     display: none;
   }
+
   .palmares .tabla {
     display: block;
     align-self: center;
     text-align: center;
     padding: 0px 10px 15px 10px;
   }
+
   .palmares .tabla tr {
     background-color: white;
   }
+
   .palmares .tabla tr th {
     border: black solid 1px;
   }
+
   .palmares .tabla tr td {
     border: black solid 1px;
   }
+
   .imagen-uno p {
     text-align: center;
     padding: 30px 100px 0px 100px;
     margin-bottom: 0px;
   }
+
   .imagen-dos p {
     text-align: center;
     padding: 30px 100px 0px 100px;
     margin-bottom: 0px;
   }
+
   .imagen-tres p {
     text-align: center;
     padding: 30px 100px 0px 100px;
     margin-bottom: 0px;
   }
 }
+
 /* ==== DESKTOP ====*/
 @media (min-width: 992px) {
   main {
     margin: 0px 40px 0px 40px;
   }
+
   .primeros-mundiales {
     display: flex;
   }
+
   .primeros-mundiales .texto-foto-vieja {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+
   .primeros-mundiales .texto-foto-vieja .foto-vieja {
     height: auto;
     max-width: auto;
     display: flex;
     justify-content: end;
   }
+
   .primeros-mundiales .texto-foto-vieja p {
     max-width: 45%;
     align-self: center;
   }
+
   .palmares {
     display: flex;
     flex-direction: row;
     width: 100%;
   }
+
   .palmares .tabla {
     max-width: 33%;
     justify-content: center;
   }
+
   .palmares .imagenes {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-width: 33%;
   }
+
   .palmares .imagenes .imagen-uno {
     flex-direction: column;
   }
+
   .palmares .imagenes .imagen-uno img {
     width: 100%;
     height: 200px;
     margin: 5px 5px;
     padding: 0px 5px 0px 5px;
   }
+
   .palmares .imagenes .imagen-uno p {
     padding: 0;
   }
+
   .palmares .imagenes .imagen-dos {
     flex-direction: column;
   }
+
   .palmares .imagenes .imagen-dos img {
     width: 100%;
     height: 200px;
     margin: 5px 5px;
     padding: 0px 5px 0px 5px;
   }
+
   .palmares .imagenes .imagen-dos p {
     padding: 0;
   }
+
   .palmares .imagen-tres {
     flex-direction: column;
     max-width: 33%;
     width: 100%;
     align-self: center;
   }
+
   .palmares .imagen-tres img {
     width: 100%;
     height: 200px;
     margin: 5px 5px;
     padding: 0px 5px 0px 5px;
   }
+
   .palmares .imagen-tres p {
     padding: 0;
   }
 }
+
 /* ==== MOBILE ==== */
 .logo-mundial {
   text-align: center;
   margin: 20px 5px 10px 5px;
 }
+
 .logo-mundial img {
   border: black solid 2px;
 }
@@ -589,14 +691,17 @@ header nav ul li a:hover {
   padding: 10px;
   border-radius: 10px;
 }
+
 .tres-noticias-index h3 {
   font-size: x-large;
   font-family: Times, Times New Roman, serif;
 }
+
 .tres-noticias-index img {
   width: 100%;
   border: black 1px solid;
 }
+
 .tres-noticias-index p {
   font-size: large;
   text-align: center;
@@ -608,6 +713,7 @@ header nav ul li a:hover {
   text-align: center;
   text-decoration: underline;
 }
+
 .clasificacion p {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.608);
@@ -618,6 +724,7 @@ header nav ul li a:hover {
   background-color: rgba(65, 105, 225, 0.726);
   border-radius: 10px;
 }
+
 .lista-clasificacion li {
   padding: 5px 3px 0px 5px;
 }
@@ -627,6 +734,7 @@ header nav ul li a:hover {
   padding: 5px 0px 5px 0px;
   text-decoration: underline;
 }
+
 .formato p {
   background-color: rgba(65, 105, 225, 0.726);
   border-radius: 10px;
@@ -638,11 +746,13 @@ header nav ul li a:hover {
   padding: 5px 0px 5px 0px;
   text-decoration: underline;
 }
+
 .eleccion-sede p {
   background-color: rgba(65, 105, 225, 0.726);
   border-radius: 10px;
   padding: 10px;
 }
+
 .eleccion-sede .mapa-argentina {
   width: 100%;
 }
@@ -654,22 +764,28 @@ header nav ul li a:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
+
   .tres-noticias-index div {
     padding: 10px;
   }
+
   .tres-noticias-index h3 {
     margin-top: 0;
   }
+
   .tres-noticias-index img {
     height: 150px;
   }
+
   .tres-noticias-index hr {
     display: none;
   }
+
   .tres-noticias-index p {
     margin-top: 10px;
   }
 }
+
 .clasificacion h2,
 .formato h2,
 .eleccion-sede h2 {
@@ -681,9 +797,11 @@ header nav ul li a:hover {
   padding: 0;
   margin: 0;
 }
+
 .lista-clasificacion ul li {
   margin-bottom: 5px;
 }
+
 .lista-clasificacion img {
   border: white 1px solid;
   max-width: 100%;
@@ -701,61 +819,76 @@ header nav ul li a:hover {
   .main {
     margin: 40px 40px 0px 40px;
   }
+
   .logo-mundial {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .logo-mundial img {
     max-width: 100%;
     height: auto;
   }
+
   .noticias-index {
     margin-bottom: 20px;
   }
+
   .noticias-index h2 {
     margin-top: 0;
   }
+
   .tres-noticias-index img {
     height: 250px;
   }
+
   .tres-noticias-index .titulo-tres-noticias hr {
     display: none;
   }
+
   .lista-clasificacion {
     display: flex;
     padding-left: 20px;
   }
+
   .lista-clasificacion li {
     padding-top: 20px;
   }
+
   .lista-clasificacion img {
     border: white 1px solid;
     max-width: 500px;
     max-height: 500px;
     margin: 10px 10px;
   }
+
   .formato p {
     padding: 10px;
   }
 }
+
 /* ==== MOBILE ==== */
 .container-relative {
   background-color: rgba(65, 105, 225, 0.726);
   border-radius: 10px;
 }
+
 .container-relative .capitannigeria-mobile {
   border-radius: 10px;
   padding: 15px 15px;
   text-align: center;
 }
+
 .container-relative .capitannigeria-mobile img {
   border-radius: 10%;
   border: white 1px solid;
 }
+
 .container-relative .texto-imagen {
   text-align: center;
 }
+
 .container-relative .capitan-nigeria {
   display: none;
 }
@@ -765,18 +898,22 @@ header nav ul li a:hover {
   border-radius: 10px;
   padding-top: 20px;
 }
+
 .noticias-destacadas h2 {
   text-align: center;
   text-decoration: underline;
 }
+
 .noticias-destacadas h3 {
   text-align: center;
   font-size: large;
   text-decoration: underline;
 }
+
 .noticias-destacadas .images-seccion-noticias {
   border: black 1px solid;
 }
+
 .noticias-destacadas p {
   text-align: center;
 }
@@ -786,27 +923,33 @@ header nav ul li a:hover {
   .article .images-seccion-noticias {
     width: 100%;
   }
+
   .article p {
     text-align: center;
   }
 }
+
 /* ==== DESKTOP ==== */
 @media (min-width: 992px) {
   main {
     margin: 0px 40px 0px 40px;
   }
+
   .container-relative .capitannigeria-mobile {
     display: none;
   }
+
   .container-relative .capitan-nigeria {
     display: flex;
     border-radius: 10%;
     padding: 15px 15px;
     width: 100%;
   }
+
   .container-relative .texto-imagen {
     display: none;
   }
+
   .noticias-destacadas {
     display: flex;
     flex-direction: row;
@@ -814,9 +957,11 @@ header nav ul li a:hover {
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
   .noticias-destacadas article {
     max-width: 25%;
   }
+
   .noticias-destacadas article .images-seccion-noticias {
     height: 200px;
     max-width: 300px;
@@ -824,25 +969,31 @@ header nav ul li a:hover {
     overflow: hidden;
     border-radius: 9%;
   }
+
   .noticias-destacadas article hr {
     display: none;
   }
+
   .titulo-noticias-destacadas {
     font-size: x-large;
     text-align: center;
   }
 }
+
 /* ==== MOBILE ==== */
 .sedes h2 {
   padding-top: 10px;
   text-align: center;
 }
+
 .sedes h3 {
   padding: 0px 0px 5px 0px;
 }
+
 .sedes hr {
   padding-bottom: 0px;
 }
+
 .sedes p {
   background-color: rgba(65, 105, 225, 0.726);
   border-radius: 10px;
@@ -853,12 +1004,14 @@ header nav ul li a:hover {
   grid-template-columns: 50% 50%;
   grid-template-rows: 194px 194px;
 }
+
 .ubicacion-estadios iframe {
   grid-column: 1/3;
   grid-row: 1/3;
   height: 100%;
   width: 100%;
 }
+
 .ubicacion-estadios a {
   position: relative;
   grid-column: 2/3;
@@ -868,9 +1021,11 @@ header nav ul li a:hover {
   align-self: center;
   justify-self: center;
 }
+
 .ubicacion-estadios .img-estadios {
   border: black solid 1px;
 }
+
 .ubicacion-estadios .img-estadios img {
   width: 100%;
 }
@@ -882,19 +1037,23 @@ header nav ul li a:hover {
     margin-left: 10px;
   }
 }
+
 /* ==== DESKTOP ====*/
 @media (min-width: 992px) {
   main {
     margin: 0px 40px 0px 40px;
   }
+
   .sedes {
     display: flex;
     flex-direction: column;
   }
+
   .sedes h3 {
     text-decoration: underline;
     text-align: start;
   }
+
   .sedes .ubicacion-estadios {
     display: flex;
     flex-direction: row;
@@ -902,9 +1061,11 @@ header nav ul li a:hover {
     height: 400px;
     margin-bottom: 10px;
   }
+
   .sedes .ubicacion-estadios iframe {
     max-width: 40%;
   }
+
   .sedes .ubicacion-estadios .img-estadios {
     align-self: center;
     justify-self: end;
